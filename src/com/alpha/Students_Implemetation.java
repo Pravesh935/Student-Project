@@ -28,17 +28,51 @@ public class Students_Implemetation implements StudentOperation{
 
 	 @Override
 	 public void Delete() {
-		// TODO Auto-generated method stub
+		 System.out.println("Enter id");
+		 int id=sc.nextInt();
+		 for(Student s: list) {
+			 if(s.getId()==id) {
+				 list.remove(s);
+				 System.out.println("deleted");
+			 }
+			 else {
+				 System.out.println("not found");
+			 }
+		 }
+	 
 		
 	 }
 
 	 @Override
 	 public void Update() {
 		// TODO Auto-generated method stub
+		 System.out.println("enter id to update");
+		 int id=sc.nextInt();
+		 System.out.println("enter age");
+		 int age=sc.nextInt();
+		 for(Student s:list) {
+			 if(s.getId()==id) {
+				 s.setAge(age);
+				 System.out.println(" age updated");
+			 }
+			 else {
+				 System.out.println("not found");
+			 }
+		 }
 		
 	 }
 	 @Override
 	 public Student FindStudent() {
+		 System.out.println("enter  student id");
+		 int id=sc.nextInt();
+		 
+		 for(Student s:list) {
+			 if(s.getId()==id)
+				 System.out.println("Student found");
+			     System.out.println(s);
+				 return s;
+		 }
+		 System.out.println("not found");
 		 return null;
 		 
 	 }
