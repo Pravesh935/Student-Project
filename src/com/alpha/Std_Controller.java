@@ -24,36 +24,31 @@ public static void main(String[] args) {
 		switch(choice) {
 		
 		case 1: {
-			System.out.println("Enter student ID: ");
-			int id = sc.nextInt();
-			
-			System.out.println("Enter student Name:");
-			String name = sc.next();
-			
-			System.out.println("Enter student Age:");
-			int age = sc.nextInt();
-			
-			Student s = new Student(id, name, age);
-			
-			si.AddStudent(s);
-			
+			 
+			si.AddStudent();
 			
 			break;
 		}
 		
 		
 		case 2: {
-			
+			si.Delete();
 			break;
 		}
 		
 		
 		case 3: {
+			si.Update();
 			break;
 		}
 		
 		
 		case 4: {
+			si.FindStudent();
+			break;
+		}
+		case 5: {
+			flag=false;
 			break;
 		}
 			
@@ -61,7 +56,7 @@ public static void main(String[] args) {
 		
 		
 	}
-	
+	sc.close();
 	
 	
 }

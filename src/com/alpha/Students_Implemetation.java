@@ -7,28 +7,30 @@ public class Students_Implemetation implements StudentOperation{
 	
 	 ArrayList <Student> list = new ArrayList<>();
 
-	@Override
-	public Student FindStudent(int id) {
+	 @Override
+	 public Student FindStudent() {
 		// TODO Auto-generated method stub
 		return null;
-	}
+	 }
 
-	@Override
-	public void AddStudent(Student s) {
+	 @Override
+	 public void AddStudent() {
 		// TODO Auto-generated method stub
 		
-	}
+	 }
 
-	@Override
-	public void Delete(int id) {
+	 @Override
+	 public void Delete() {
 		// TODO Auto-generated method stub
 		
-	}
+	 }
 
-	@Override
-	public void Update(int id, String name) {
+	 @Override
+	 public void Update() {
 		// TODO Auto-generated method stub
 		
-	}
+	 }
+
+	 
 
 }
