@@ -28,18 +28,7 @@ public class Students_Implemetation implements StudentOperation{
 
 	 @Override
 	 public void Delete() {
-		 System.out.println("Enter id");
-		 int id=sc.nextInt();
-		 for(Student s: list) {
-			 if(s.getId()==id) {
-				 list.remove(s);
-				 System.out.println("deleted");
-			 }
-			 else {
-				 System.out.println("not found");
-			 }
-		 }
-	 
+		  //add implementation
 		
 	 }
 
